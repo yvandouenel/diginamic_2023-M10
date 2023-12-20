@@ -1,0 +1,84 @@
+/* selecteur - bloc de code - propriété: valeur; */
+body {
+  background-color: beige;
+  color: brown;
+}
+blockquote {
+  margin: 0;
+}
+
+nav > ul > li {
+  border: 1px solid black;
+}
+
+li,
+h1 {
+  border: 5px solid red;
+}
+/* Classes css */
+.li-level1 {
+  border: 0;
+}
+/* Identité */
+#custom-li {
+  border: 2px solid green;
+}
+
+/* selecteur par attribut - ici sélectionne tous les éléments qui ont un classe qui commence (^) par col */
+[src*="chat"] {
+  border: 10px solid blueviolet;
+}
+/* Float */
+.float-left {
+  float: left;
+  margin: 0 20px 5px 0;
+}
+/* Position */
+#cat {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: transform 2s ease;
+}
+#cat:hover {
+  /* transform: rotate(180deg); */
+  /* transform: translate(100px); */
+  transform: scale(1.5, 1.5);
+}
+
+body > header > p {
+  position: relative; /* ce paragraphe devient la référence pour les éléments enfants en position absolute  */
+  width: 50%;
+}
+/* max-width */
+img {
+  max-width: 100%;
+}
+/* font */
+body {
+  font-size: 1.5rem; /* 24px */
+}
+li {
+  font-size: 2em;
+}
+/* Multi-colonnes  avec media queries*/
+footer > div {
+  background-color: grey;
+  border: 1px solid black;
+  padding: 30px;
+}
+@media screen and (min-width: 1024px) {
+  footer > div {
+    width: 50%;
+    background-color: grey;
+    float: left;
+    border: 1px solid black;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (min-width: 1400px) {
+  footer > div {
+    width: 25%;
+  }
+}
