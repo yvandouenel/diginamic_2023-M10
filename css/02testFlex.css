@@ -1,0 +1,18 @@
+/* Parent */
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100vh;
+  border: 1px solid red;
+  /* alignement sur plusieurs lignes (si l'acce principal est horizontal) */
+  align-content: space-between;
+  /* alignement sur chaque ligne (si l'acce principal est horizontal) */
+  align-items: flex-end;
+}
+/* enfants */
+div {
+  border: 1px solid black;
+  flex-basis: 30%;
+  box-sizing: border-box;
+}
