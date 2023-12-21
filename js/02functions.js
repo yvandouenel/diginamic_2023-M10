@@ -62,7 +62,7 @@ console.log(`balance : `, mka.getBalance());
 // Fonctions fléchées
 function double(a) {
   return a * 2;
-} 
+}
 /* const double = function(a) {
   return a * 2;
 } */
@@ -72,7 +72,15 @@ function double(a) {
 } */
 //const double = a => a * 2;
 console.log(`double de a`, double(12));
-console.log(typeof(double));
+console.log(typeof (double));
 
-setTimeout(()=>{console.log(`hello dans setTimeout`);}, 2000);
+//setTimeout(() => { console.log(`hello dans setTimeout`); }, 2000);
 console.log(`Hello`);
+
+const compter = (val = 1) => {
+  setTimeout(() => { console.log(val); }, val * 1000);
+  if (val < 5) {
+    compter(val + 1)
+  }
+}
+compter();
