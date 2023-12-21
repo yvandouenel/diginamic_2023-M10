@@ -1,0 +1,14 @@
+.list-style-none {
+  list-style: none;
+}
+/* flex ***********************************************************/
+.justify-content-between {
+  justify-content: space-between;
+}
+.gap-2 {
+  gap: 1rem;
+}
+.align-items-center {
+  align-items: center;
+}
+/* fin flex *********************************************************
