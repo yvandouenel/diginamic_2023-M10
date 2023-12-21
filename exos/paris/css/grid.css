@@ -1,0 +1,15 @@
+.d-flex {
+  display: flex;
+}
+.col-2 {
+  flex-basis: calc(100%/6);
+}
+.col-5 {
+  flex-basis: calc(100%*5/12);
+}
+.offset-left-2 {
+  margin-left: calc(100%/6);
+}
+.offset-right-1 {
+  margin-right: calc(100%/12);
+}
