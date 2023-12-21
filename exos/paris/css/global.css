@@ -5,6 +5,9 @@
 .justify-content-between {
   justify-content: space-between;
 }
+.justify-content-center {
+  justify-content: center;
+}
 .gap-2 {
   gap: 1rem;
 }
