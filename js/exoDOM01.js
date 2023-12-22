@@ -20,4 +20,8 @@ function createMarkup(markupname, text, parent, attributes = []) {
 }
 const header = createMarkup("header", "", document.body);
 const nav = createMarkup("nav", "", header);
-const button1 = createMarkup("button", "Item 1", nav);
+for(let i = 0; i < 4; i++) {
+  const button1 = createMarkup("button", `Item ${i}`, nav,[{id: `button-${i}`}]);
+}
+
+document.querySelector("#button-0").style.color = "red";
